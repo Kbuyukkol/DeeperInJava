@@ -1,0 +1,23 @@
+Task:
+
+        create a class Trader
+        create instance variables: name, city
+        encapsulate, toString, constructor
+
+		create a class Transaction
+        create instance variables: Trader, company, year, value
+        encapsulate, toString, constructor
+
+        I gave a class StockMarket that has some data to get started
+
+        find the following information:
+            1) all transactions in 2020 and sort by highest value
+            2) Find the 3 biggest transactions
+            3) Find the company's name with the smallest 2 transactions
+            4) find all the cities trades were made in
+            5) find all the transactions of Meta
+            6) find all the traders that are from New York
+            7) find all the trader's names that are from Chicago
+            8) find all the trader's names and sort them alphabetically
+            9) find if there is any Traders from Los Angeles
+            10) find the values of the transactions Mark was involved in
