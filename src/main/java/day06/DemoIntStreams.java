@@ -12,6 +12,8 @@ public class DemoIntStreams {
         IntStream nums1 = IntStream.range(0, 11);
         nums1.forEach(System.out::println);
 
+        System.out.println("--------------------");
+
         IntStream nums2 = IntStream.of(5, 10, 15, 20);
         nums2.forEach(System.out::println);
 

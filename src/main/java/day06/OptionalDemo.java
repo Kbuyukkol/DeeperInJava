@@ -27,14 +27,15 @@ public class OptionalDemo {
 
         System.out.println("======== findAny ========");
 
-        List<Integer> nums = List.of(3, 5, 1, 5, 10, 284, 23, 28, 48);
+        List<Integer> nums = List.of(3, 5, 1, 5, 10, 284, 23, 28,478, 48,315);
 
         Optional<Integer> lessThan300 = nums.stream()
                 .filter(p -> p < 300)
                 .findAny();
         System.out.println(lessThan300);
         System.out.println(lessThan300.get());
-        System.out.println("======== findAny - oppisite ========");
+
+        System.out.println("======== findAny - opposite ========");
 
         Optional<Integer> moreThan300 = nums.stream()
                 .filter(p -> p > 300)
@@ -44,13 +45,13 @@ public class OptionalDemo {
 
         System.out.println("======== ifPresent ========");
         Optional<Integer> moreThan300Again = nums.stream()
-                .filter(p -> p > 300) // to check invalid you can use 300 instead
+                .filter(p -> p > 300)
                 .findAny();
         moreThan300Again.ifPresent(System.out::println);
 
         System.out.println("======== orElse ========");
         Optional<Integer> moreThan3 = nums.stream()
-                .filter(p -> p > 250) // to check invalid you can use 300 instead
+                .filter(p -> p > 500)
                 .findAny();
         System.out.println(moreThan3.orElse(-1));
 
