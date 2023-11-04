@@ -9,6 +9,8 @@ public class C01_StringBuffer {
 
     public static void main(String[] args) {
 
+
+
         StringBuffer str = new StringBuffer();// with an initial capacity of 16
         /*
         If the number of characters increases from its current capacity,
