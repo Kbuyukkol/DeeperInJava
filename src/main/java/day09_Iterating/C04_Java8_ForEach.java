@@ -14,6 +14,10 @@ This method is defined in the Iterable interface, and can accept Lambda expressi
 
         List<String> countries = Arrays.asList("Germany", "Panama", "Australia");
 
+        countries.forEach(p-> System.out.println(p));
+
+        System.out.println("--------------------------");
+
         countries.forEach(System.out::println);
 
         System.out.println("--------------------------");
