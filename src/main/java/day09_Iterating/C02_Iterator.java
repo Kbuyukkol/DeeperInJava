@@ -67,6 +67,24 @@ public class C02_Iterator {
         }
         System.out.println("words2 = " + words2);
 
+        System.out.println("-------------------------------------");
+
+        Map<String, Integer> workers = new HashMap<>();
+        workers.put("Aygun", 95);
+        workers.put("Maria", 90);
+
+        Iterator<String> mapIterator = workers.keySet().iterator();
+        Iterator<Integer> mapIterator2 = workers.values().iterator();
+        while (mapIterator.hasNext()) {
+            System.out.println(mapIterator.next());
+
+        }
+        while (mapIterator2.hasNext()) {
+            System.out.println(mapIterator2.next());
+
+        }
+
+
 
     }
 
