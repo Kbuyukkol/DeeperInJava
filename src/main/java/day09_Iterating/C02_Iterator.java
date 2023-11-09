@@ -74,13 +74,21 @@ public class C02_Iterator {
         workers.put("Maria", 90);
 
         Iterator<String> mapIterator = workers.keySet().iterator();
-        Iterator<Integer> mapIterator2 = workers.values().iterator();
+
+
         while (mapIterator.hasNext()) {
             System.out.println(mapIterator.next());
 
         }
+        Iterator<Integer> mapIterator2 = workers.values().iterator();
+
         while (mapIterator2.hasNext()) {
             System.out.println(mapIterator2.next());
+
+        }
+        Iterator<Map.Entry<String, Integer>> mapIterator3 = workers.entrySet().iterator();
+        while (mapIterator3.hasNext()) {
+            System.out.println(mapIterator3.next());
 
         }
 
